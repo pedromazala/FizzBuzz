@@ -8,7 +8,7 @@
 
 namespace App\PedroMazala\Parser\Divisible;
 
-class DivisibleByTree extends AbstractDivisibleParser
+class DivisibleByThree extends AbstractDivisibleParser
 {
     protected function getDivisor(): int
     {
