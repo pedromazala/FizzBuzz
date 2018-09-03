@@ -5,8 +5,8 @@ require_once __DIR__ . '/../vendor/autoload.php';
 $data = new \App\PedroMazala\Data(1, 100);
 
 $one = new \App\PedroMazala\Parser\Divisible\DivisibleByOne();
-$tree = new \App\PedroMazala\Parser\Divisible\DivisibleByThree($one);
-$five = new \App\PedroMazala\Parser\Divisible\DivisibleByFive($tree);
+$three = new \App\PedroMazala\Parser\Divisible\DivisibleByThree($one);
+$five = new \App\PedroMazala\Parser\Divisible\DivisibleByFive($three);
 $fifteen = new \App\PedroMazala\Parser\Divisible\DivisibleByFifteen($five);
 
 $parser = new \App\PedroMazala\Parser($fifteen, $data);
